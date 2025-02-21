@@ -1,4 +1,0 @@
-bitsandbytes
-trl
-peft
-backports.lzma
