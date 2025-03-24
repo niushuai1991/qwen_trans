@@ -7,14 +7,16 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.11"
-package-mode = false
 dependencies = [
     "bitsandbytes (>=0.45.2,<0.46.0)",
     "setuptools (>=75.8.0,<76.0.0)",
     "packaging (==24.1)",
     "unsloth (>=2025.2.15,<2026.0.0)",
+    "gradio (>=5.17.1,<6.0.0)",
 ]
 
+[tool.poetry]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -30,6 +32,10 @@ name = "pypi"
 name = "torch"
 url = "https://download.pytorch.org/whl/cu121"
 priority = "supplemental"
+
+
+[tool.poetry.group.dev.dependencies]
+huggingface-hub = "^0.29.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
